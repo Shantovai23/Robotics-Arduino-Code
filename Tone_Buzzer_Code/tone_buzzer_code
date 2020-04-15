@@ -1,0 +1,17 @@
+//tone_buzzer
+
+void setup() {
+  pinMode(13,OUTPUT);
+
+}
+
+void loop() {
+  digitalWrite(13,HIGH);
+  delay(80);
+  digitalWrite(13,LOW);
+  delay(80);
+
+
+  tone(8,1000,1000);
+
+}
