@@ -1,0 +1,15 @@
+
+int sensor_val;
+int output_val;
+void setup()
+{
+pinMode(11, OUTPUT);
+pinMode(A0, INPUT);
+}
+void loop()
+{
+int sensor_val = analogRead(A0);
+int output_val = map(sensor_val, 0, 1023, 0, 255);
+analogWrite(11, output_val);
+delay(0.5);
+}
